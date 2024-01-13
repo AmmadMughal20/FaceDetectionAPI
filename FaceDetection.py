@@ -16,17 +16,3 @@ def detect_faces(img):
     for (x, y, w, h) in faces:
         cv2.rectangle(img, (x,y), (x+w, y+h), (255,255,0),2)
     return img
-
-# cap = cv2.VideoCapture(0)
-
-# while True:
-#     rec, frame = cap.read()
-#     frame = detect_faces(frame)
-
-#     cv2.imshow('Video Face Detection', frame)
-
-#     if cv2.waitKey(1) & 0xFF == ord('q'):
-#         break
-
-# cap.release()
-# cv2.destroyAllWindows()
